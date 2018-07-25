@@ -5,13 +5,33 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    <ion-card>
+        <img src="http://www.conricyt.mx/imagenes/Noticias/ch_slide_imagen743.png"/>
+
+
+
+
+        <ion-card-content>
+          <ion-card-title>
+            Nine Inch Nails Live
+            </ion-card-title>
+          <p>
+            The most popular industrial group ever, and largely
+            responsible for bringing the music to a mass audience.
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card *ngFor="let item of lista">
+          <img src="http://www.conricyt.mx/imagenes/Noticias/ch_slide_imagen743.png"/>
+          <ion-card-content>
+            <ion-card-title>
+                {{item.nombre}}
+              </ion-card-title>
+            <p>
+                {{item.edad}}
+            </p>
+            <button ion-button (click)="detalles('juan','carlos')">detalles</button>
+          </ion-card-content>
+        </ion-card>
 </ion-content>

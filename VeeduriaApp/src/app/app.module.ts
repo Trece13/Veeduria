@@ -6,7 +6,10 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { YoutubePage } from '../pages/youtube/youtube';
 import { TabsPage } from '../pages/tabs/tabs';
+
+import {PesonasPage} from '../pages/pesonas/pesonas';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +20,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    YoutubePage,
+    TabsPage,
+    PesonasPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    YoutubePage,
+    TabsPage,
+    PesonasPage
   ],
   providers: [
     StatusBar,
